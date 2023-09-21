@@ -1,0 +1,424 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*font-family: 'Montserrat',sans-serif;
+    font-family: 'Poppins', sans-serif; */
+    font-family: "Nexa";
+    color:white;
+    text-decoration:none;
+}
+html{
+    height:100%;
+    width:100%;
+    overflow-x: hidden;
+}
+#nav {
+    height:90px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    padding:0 150px;
+    gap:50px;
+    position:fixed;
+    justify-content: flex-start;
+    z-index: 99;
+    list-style:none;
+}
+#nav a h4:hover{
+    color:orange;
+    cursor: pointer;
+}
+#nav .active h4:hover{
+    color: orange;
+}
+#nav img{
+    height:110px;
+}
+#nav{
+    text-transform: uppercase;
+    font-weight:400;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+}
+/* home page*/
+.Home{
+    position:relative;
+    background-color:rgba(0,0,0,0.37);
+    overflow-x:hidden;
+}
+#Home{
+    height:100vh;
+    width:100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Home h1{
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    margin-top: 200px;
+}
+#Home h1::before{
+    content: "WELCOME To Tasty Bites";
+    position: absolute;
+    color:greenyellow;
+    top: -2px;
+    left: -2px;
+    -webkit-text-stroke: 1px orange;
+    z-index:-1;
+}
+#Home h2{
+    font-size: 35px;
+    font-weight:600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#Home h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px
+}
+#scroller {
+    height:30vh;
+    width:100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller1 {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#scroller h4{
+    display: inline-block;
+    font-size: 70px;
+    font-weight: 900;
+    font-family: "Nexa";
+    margin-right: 10px;
+    color: transparent;
+    transition: all linear 0.5s;
+    -webkit-text-stroke: 2px #92bb22;
+}
+#scroller h4:hover{
+    color:#95C11E;
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.order{
+    height:100vh;
+    width:100%;
+    background: #000;
+}
+#order-online{    
+    display: flex;
+    padding: 0 50px;
+    align-items:center;
+    position:relative;
+    z-index: 10;
+    justify-content: space-around;
+}
+#order-online img{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-top: 150px;
+}
+#order-in{
+    width: 40%;
+    text-align: center;
+    margin-top: 180px;
+}
+#order-in h4{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    
+}
+#order-in p{
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+#cards-container{
+    /*background-color:#000;*/
+    height:60vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px; 
+    margin-top:-30px;
+}
+.card{
+    height:60%;
+    width:24%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow:hidden;
+    transition:all ease 0.5s;
+}
+#card1{
+    background-image: url(image/chikenbiryani.jpg);
+}
+#card2{
+    background-image: url(image/shwarma.jpg);
+}
+#card3{
+    background-image: url(image/65.jpg);
+}
+.overlay{
+    height:100%;
+    width:100%;
+    padding-top:160px;
+    background-color:#95C11E;
+    padding:30px;
+    text-align:center;
+    opacity:0;
+    transition:all ease 0.5s;
+}
+.overlay h4{
+    color:#000;
+    font-size:30px;
+    text-transform:uppercase;
+    font-weight:800;
+}
+.overlay h5{
+    color:#000;;
+    padding:25px;
+    font-size:20px;
+    font-weight:900;
+}
+.overlay button{
+    padding:10px 20px;
+    border-radius:30px;
+    cursor: pointer;
+    color:#000;
+}
+.card:hover .overlay{
+    opacity:1;
+}
+.card:hover{
+    transform:rotate3d(-1,1,0,20deg)
+}
+/*image slider*/
+.services{
+    height:100vh;
+    width:100%;
+    background-color:#000;
+}
+.slider {
+    width: 100%;
+    max-width: 800px;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-left:260px;
+    padding-top: 100px;
+  }
+  .slide {
+    width: 100%;
+    height: 480px;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+  }
+  .btn:active {
+    transform: scale(1.1);
+  }
+  .btn-prev {
+    top: 45%;
+    left: 2%;
+    color:#000;
+  }
+  
+  .btn-next {
+    top: 45%;
+    right: 2%;
+    color:#000;
+  }
+#box{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap:100px;
+    margin-top: 10px;
+}
+#box img{
+    height: 100%;
+    object-fit: cover;
+    width:400px;
+    border-radius: 20px;
+    background:linear-gradient(yellow,orange,pink,purple,blue);
+    padding: 3px;
+    margin-left:260px;
+}
+#box2{
+    width: 40%;
+    text-align:center;
+    justify-content:center;
+    padding-top:-1px;
+    
+}
+#box1 h5{
+    font-size: 30px;
+    text-transform:capitalize;
+    margin-left:10px;
+    letter-spacing: 1.5px;
+}
+#box1 p{
+    font-size: 18px;
+    line-height: 1.7rem;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 55px;
+    text-align:left;
+}
+/*Private -dining*/
+.private-dining{
+    height:100vh;
+    width:100%;
+    background-image:url(image/privatebg.jpg);
+    object-fit:cover;
+    transition:all ease 1s;
+}
+#dining{
+    text-align:center;
+    align-items:center;
+}
+#dining h1{
+    font-family:'Poppins',sans-serif ;
+    font-weight:bold;
+    color:#ece0e0;
+    font-size:50px;
+    padding-top: 200px;
+}
+#dining h4{
+    padding:15px;
+    line-height:1.7rem;
+    color: #000;
+    font-size:20px;
+    font-weight:bold;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#dining button {
+    background:linear-gradient(yellow,orange,pink,purple,blue);
+    padding:2px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    
+    font-size: 1em;
+    color:rgb(3, 3, 3);
+}
+.Private-dining #dining h4:hover{
+    color:rgb(250, 246, 246);
+}
+.left{
+    color:white;
+    padding:100px;
+    height:100px;
+}
+.left h6{
+    padding:5px;
+    font-size: 18px;
+}
+
+.right{
+    float:right;
+    color:white;
+}
+.right h6{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+span{
+    color: rgb(168, 223, 132);
+}
+
+/* Contact-page*/
+.contact-page{
+    width:100%;
+    height:100vh;
+    display:flex;
+    gap:20px;
+    align-items:center;
+    text-align:center;
+    background: #000;
+}
+#map{
+    height:60vh;
+    width:50%;
+}
+#map img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:all ease 1s;
+    padding-left:40px;
+    border-radius:30px;
+}
+#contact{
+    width:50%;
+    height:100px;
+}
+#contact h6{
+    font-family:'Poppins', sans-serif;
+    font-size:20px;
+    letter-spacing:.1rem;
+    padding: 5px;
+}
+footer{
+    width:100vw;
+    height:15%;
+    background-color:#f5f5f5;
+    text-align:center;
+    align-items:center;
+    color:#000;
+    font-weight:bold;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="image\f1.png" />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min css"
+    />
+    <title>Food Delivery Website</title>
+  </head>
+  <body>
+    <div id="nav" class="nav">
+      <img src="image/logo.png" alt="image error" />
+      <a href="#Home" class="active"><h4>Home</h4></a>
+      <a href="#order-online"><h4>Order Online</h4></a>
+      <a href="#services"><h4>Services</h4></a>
+      <a href="#private-dining"><h4>Private Dining</h4></a>
+      <a href="#contact-page"><h4>Contact Us</h4></a>
+    </div>
+    <video autoplay loop muted src="image/bgvideo.mp4"></video>
+    <!--Home page-->
+    <!--<div id="main" class="main">-->
+    <section class="Home" id="Home">
+      <div id="Home">
+        <h1>WELCOME To Tasty Bites</h1>
+        <h2>EAT. DRINK. PLAY.</h2>
+        <h3>Pull Up The Chair And Relax</h3>
+        <div id="scroller">
+          <div id="scroller1">
+            <h4>Enjoy Delicious</h4>
+            <h4>Food in Your</h4>
+            <h4>Healthy Life!!!</h4>
+          </div>
+          <div id="scroller1">
+            <h4>Enjoy Delicious</h4>
+            <h4>Food in Your</h4>
+            <h4>Healthy Life</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Order-->
+    <section class="order" id="order">
+      <div id="order-online">
+        <img src="image/image1.jpg" alt="Error" />
+        <div id="order-in">
+          <h4>ORDER NOW</h4>
+          <p>
+            We serve the most authentic, traditional Indian food, providing high
+            standards in service and quality. For us meal time is more than
+            food-it's about connection and sharing love. Our mission is to
+            provide you with the deepest pleasure of quality dining and
+            exceptional service.
+          </p>
+        </div>
+        <img src="image/image2.jpg" alt="Image Error" />
+      </div>
+      <div id="cards-container">
+        <div class="card" id="card1">
+          <div class="overlay">
+            <h4>Chicken Biryani</h4>
+            <h5>Prize: Rs.150</h5>
+            <button onclick="fun()">Order Now</button>
+          </div>
+        </div>
+        <div class="card" id="card2">
+          <div class="overlay">
+            <h4>Chicken Shawarma</h4>
+            <h5>Prize: Rs.100</h5>
+            <button onclick="fun()">Order Now</button>
+          </div>
+        </div>
+        <div class="card" id="card3">
+          <div class="overlay">
+            <h4>Chicken 65</h4>
+            <h5>Prize: Rs.80</h5>
+            <button onclick="fun()">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--services-->
+    <section class="services" id="services">
+      <div class="slider">
+        <div class="slide">
+          <img src="image/carausel/1.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="image/carausel/2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="image/carausel/3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="image/carausel/4.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="image/carausel/5.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="image/carausel/6.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="image/carausel/7.jpg" alt="" />
+        </div>
+        <!-- Control buttons -->
+        <button class="btn btn-next">></button>
+        <button class="btn btn-prev"><</button>
+      </div>
+      <div id="box">
+        <img src="image/delivery.jpg" alt="Image error" />
+        <div id="box1">
+          <h5>Delivery Deliciousness to your Doorstep!!!</h5>
+          <p>
+            We ready to supply food for you anytime. Get restaurant quality food
+            delivery to you doorstep in just a few click. With our casy ordering
+            process & speedy delivery.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!---Private dining--->
+    <section class="private-dining" id="private-dining">
+      <div id="dining">
+        <h1>Private Dining in Tasty Bites</h1>
+        <h4>
+          Whether it’s a small gathering of business associates or a wedding
+          reception for all your friends and family, enjoy a private dining
+          experience at Tasty Bites. Versatile and open, our beautifully
+          decorated space offers a distinctive style and can be configured to
+          accommodate many formats, like seated guests for a rehearsal dinner or
+          mingling guests for a cocktail party.
+        </h4>
+        <button onclick="fun()">Book Now</button>
+      </div>
+      <div id="left" class="left">
+        <h6>Sunday–Thursday <span>4-9PM</span></h6>
+        <div id="right" class="right">
+          <h6>
+            (423) 266-1121
+            <span>801 Dilsukhnagar Road. Hyderabad, TA 37402</span>
+          </h6>
+        </div>
+        <h6>Friday–Saturday <span>4-10PM</span></h6>
+      </div>
+    </section>
+    <!--- Contact page--->
+    <section class="contact-page" id="contact-page">
+      <div id="map">
+        <img src="image/map.png" alt="Error" />
+      </div>
+      <div id="contact">
+        <h6>Email-Id:<span>info@tastybites.com</span></h6>
+        <h6>Contact Number:<span>0897645328</span></h6>
+      </div>
+    </section>
+    <footer>Created By : Azmath Farana@1905</footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="Script.js"></script>
+  </body>
+</html>
